@@ -18,6 +18,14 @@
 % 02110-1301  USA
 
 
+% Inputs:
+% 'filename': the image file containing the sample image (the texture to grow)
+% 'winsize': the edge length of the window to match at each iteration (the window is (winsize x winsize) )
+% (newRows, newCols): the size of the output image
+
+% Outputs:
+% 'Image': the output image (the synthesized texture)
+% 'time': the amount of time it took to perform the synthesis
 
 function [Image, time] = synth(filename, winsize, newRows, newCols)
 tic
